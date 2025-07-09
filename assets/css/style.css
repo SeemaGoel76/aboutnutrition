@@ -2051,9 +2051,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .myths-facts-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: 1fr 1fr;
     gap: 2rem;
     margin-top: 3rem;
+}
+
+@media (max-width: 900px) {
+    .myths-facts-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .myth-fact-item {
