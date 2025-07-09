@@ -1294,7 +1294,7 @@ h1, h2, h3, h4, h5, h6 {
 .media-logo i,
 .affiliation-logo i {
     font-size: 1.5rem;
-    color: #fff !important;
+    color: #1B5E20 !important;
     width: 30px;
     text-align: center;
 }
@@ -2612,4 +2612,29 @@ h1, h2, h3, h4, h5, h6 {
 
 .conditions-grid .condition-item .fa-shield-alt {
   color: #fff !important;
+} 
+
+/* --- Hypothyroidism Section Green Overrides --- */
+.myth-fact-header,
+.timeline-item::before,
+.timeline-period,
+.approach-item::before,
+.approach-number,
+.limitations-note,
+.limitation-icon {
+  background: linear-gradient(135deg, #1B5E20 0%, #43e97b 100%) !important;
+  color: #fff !important;
+}
+.limitation-icon i,
+.timeline-period i,
+.approach-number i {
+  color: #fff !important;
+}
+.limitations-note {
+  background: linear-gradient(135deg, #1B5E20 0%, #43e97b 100%) !important;
+  color: #fff !important;
+}
+.back-to-top, .whatsapp-float {
+  z-index: 1200 !important;
+  display: flex !important;
 } 
