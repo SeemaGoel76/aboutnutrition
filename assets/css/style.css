@@ -2638,3 +2638,11 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 1200 !important;
   display: flex !important;
 } 
+
+.limitation-icon i {
+  font-size: 2.2rem !important;
+  color: #fff !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+} 
