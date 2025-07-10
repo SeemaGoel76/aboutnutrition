@@ -357,5 +357,19 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
+    // Expandable Condition Cards
+    document.querySelectorAll('.conditions-grid .expand-btn').forEach(btn => {
+        btn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            const item = this.closest('.condition-item');
+            // Collapse any other expanded card
+            document.querySelectorAll('.conditions-grid .condition-item.expanded').forEach(openItem => {
+                if (openItem !== item) openItem.classList.remove('expanded');
+            });
+            // Toggle this card
+            item.classList.toggle('expanded');
+        });
+    });
+    
     console.log('About Nutrition website loaded successfully!');
 }); 

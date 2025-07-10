@@ -322,15 +322,57 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 3rem;
 }
 
+/* Expandable Condition Cards */
 .condition-item {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    padding: 1.5rem;
-    background: #f8f9fa;
-    border-radius: 10px;
-    transition: all 0.3s ease;
-    border: 2px solid transparent;
+    position: relative;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 16px rgba(27,94,32,0.06);
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+    margin-bottom: 1.5rem;
+    transition: box-shadow 0.2s;
+    cursor: pointer;
+    overflow: hidden;
+}
+.condition-item .expand-btn {
+    position: absolute;
+    top: 1.2rem;
+    right: 1.2rem;
+    background: none;
+    border: none;
+    color: #1B5E20;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+    z-index: 2;
+}
+.condition-item.expanded .expand-btn i {
+    transform: rotate(180deg);
+}
+.condition-desc {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.4s cubic-bezier(0.4,0,0.2,1), opacity 0.3s;
+    font-size: 1.05rem;
+    color: #2c3e50;
+    margin-top: 1.2rem;
+    background: #e6f4ea;
+    border-radius: 12px;
+    padding: 1.1rem 1rem 1rem 1rem;
+    box-shadow: 0 2px 8px rgba(27,94,32,0.04);
+}
+.condition-item.expanded .condition-desc {
+    max-height: 300px;
+    opacity: 1;
+}
+@media (max-width: 900px) {
+    .conditions-grid {
+        grid-template-columns: 1fr;
+    }
+    .condition-item {
+        padding: 1.5rem 1rem 1rem 1rem;
+    }
 }
 
 .condition-item:hover {
