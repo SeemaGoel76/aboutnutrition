@@ -1792,18 +1792,21 @@ h1, h2, h3, h4, h5, h6 {
 .condition-link {
     display: inline-block;
     padding: 10px 25px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    background: linear-gradient(135deg, #1B5E20 0%, #43e97b 100%) !important;
+    color: white !important;
     text-decoration: none;
     border-radius: 25px;
     font-weight: 500;
     transition: all 0.3s ease;
+    border: none !important;
+    box-shadow: 0 4px 12px rgba(27, 94, 32, 0.10);
 }
 
 .condition-link:hover {
+    background: linear-gradient(135deg, #217a3a 0%, #43e97b 100%) !important;
+    color: #fff !important;
     transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
-    color: white;
+    box-shadow: 0 10px 20px rgba(27, 94, 32, 0.18);
 }
 
 /* Who This Works For Section */
@@ -2768,3 +2771,180 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   margin: 0;
 } 
+
+/* --- Blog Section Modern Tiles & Sidebar --- */
+.blog-section {
+  padding: 80px 0;
+  background: transparent !important;
+}
+
+.blog-layout {
+  display: flex;
+  gap: 2.5rem;
+  align-items: flex-start;
+}
+
+.blog-sidebar {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 16px rgba(27,94,32,0.06);
+  padding: 2rem 1.5rem;
+  min-width: 260px;
+  max-width: 300px;
+  margin-bottom: 2rem;
+}
+
+.blog-sidebar h3 {
+  color: #1B5E20;
+  font-size: 1.3rem;
+  margin-bottom: 1.2rem;
+  font-weight: 700;
+}
+
+.blog-categories {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.blog-categories li {
+  margin-bottom: 1rem;
+}
+
+.blog-categories a {
+  color: #1B5E20;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.08rem;
+  transition: color 0.2s;
+}
+
+.blog-categories a:hover {
+  color: #43e97b;
+}
+
+.blog-main {
+  flex: 1;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.2rem;
+}
+
+.blog-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(27,94,32,0.08);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s, transform 0.2s;
+  min-height: 420px;
+}
+
+.blog-card:hover {
+  box-shadow: 0 16px 40px rgba(27,94,32,0.13);
+  transform: translateY(-6px) scale(1.02);
+}
+
+.blog-image-placeholder {
+  background: linear-gradient(135deg, #e6f4ea 0%, #b3e6c7 100%);
+  min-height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2rem;
+  color: #1B5E20;
+  text-align: center;
+  border-bottom: 4px solid #43e97b;
+}
+
+.blog-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1.2rem 0 0.7rem 0;
+}
+
+.blog-tags span {
+  background: linear-gradient(135deg, #1B5E20 0%, #43e97b 100%);
+  color: #fff;
+  font-size: 0.92rem;
+  font-weight: 600;
+  border-radius: 16px;
+  padding: 0.3rem 0.9rem;
+  letter-spacing: 0.01em;
+  margin-bottom: 0.2rem;
+}
+
+.blog-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1B5E20;
+  margin: 0.5rem 0 0.7rem 0;
+  padding: 0 1.2rem;
+}
+
+.blog-summary {
+  color: #444;
+  font-size: 1.05rem;
+  margin: 0 0 1.2rem 0;
+  padding: 0 1.2rem;
+  flex: 1;
+}
+
+.blog-readmore {
+  display: inline-block;
+  margin: 1.2rem 1.2rem 1.2rem 1.2rem;
+  padding: 10px 28px;
+  background: linear-gradient(135deg, #1B5E20 0%, #43e97b 100%);
+  color: #fff;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.05rem;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(27,94,32,0.08);
+}
+
+.blog-readmore:hover {
+  background: linear-gradient(135deg, #217a3a 0%, #43e97b 100%);
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(27,94,32,0.13);
+}
+
+@media (max-width: 1100px) {
+  .blog-layout {
+    flex-direction: column;
+  }
+  .blog-sidebar {
+    max-width: 100%;
+    min-width: 0;
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+  .blog-sidebar {
+    padding: 1.2rem 0.7rem;
+  }
+  .blog-title, .blog-summary {
+    padding: 0 0.7rem;
+  }
+  .blog-readmore {
+    margin: 1.2rem 0.7rem 1.2rem 0.7rem;
+  }
+}
+
+.blog-hero {
+  padding: 120px 0 80px;
+  background: #E6F4EA !important;
+  color: #1B5E20 !important;
+  position: relative;
+  overflow: hidden;
+}

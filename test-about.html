@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test About Page</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .test-section { margin: 20px 0; padding: 20px; border: 1px solid #ccc; }
+        .success { background: #d4edda; border-color: #c3e6cb; }
+        .error { background: #f8d7da; border-color: #f5c6cb; }
+    </style>
+</head>
+<body>
+    <h1>About Page Test</h1>
+    
+    <div class="test-section">
+        <h2>Testing About Page Content</h2>
+        <p>This test will verify that your About page content is accessible.</p>
+        
+        <h3>Test 1: Direct Content Check</h3>
+        <div id="content-test"></div>
+        
+        <h3>Test 2: CSS Loading Check</h3>
+        <div id="css-test"></div>
+        
+        <h3>Test 3: Image Loading Check</h3>
+        <div id="image-test"></div>
+    </div>
+
+    <script>
+        // Test 1: Check if About page content exists
+        fetch('about.html')
+            .then(response => response.text())
+            .then(html => {
+                const testDiv = document.getElementById('content-test');
+                if (html.includes('Good health starts on your plate')) {
+                    testDiv.innerHTML = '<div class="success">✅ About page content is present and accessible</div>';
+                } else {
+                    testDiv.innerHTML = '<div class="error">❌ About page content not found</div>';
+                }
+            })
+            .catch(error => {
+                document.getElementById('content-test').innerHTML = '<div class="error">❌ Error loading About page: ' + error.message + '</div>';
+            });
+
+        // Test 2: Check if CSS files are loading
+        const cssFiles = ['assets/css/style.css', 'assets/css/responsive.css'];
+        let cssLoaded = 0;
+        
+        cssFiles.forEach(cssFile => {
+            fetch(cssFile)
+                .then(response => {
+                    if (response.ok) {
+                        cssLoaded++;
+                        if (cssLoaded === cssFiles.length) {
+                            document.getElementById('css-test').innerHTML = '<div class="success">✅ CSS files are loading correctly</div>';
+                        }
+                    }
+                })
+                .catch(error => {
+                    document.getElementById('css-test').innerHTML = '<div class="error">❌ CSS file not found: ' + cssFile + '</div>';
+                });
+        });
+
+        // Test 3: Check if image exists
+        fetch('aboutnutrition_assets/wp-content/uploads/2025/05/erasebg-transformed.webp')
+            .then(response => {
+                if (response.ok) {
+                    document.getElementById('image-test').innerHTML = '<div class="success">✅ About page image is accessible</div>';
+                } else {
+                    document.getElementById('image-test').innerHTML = '<div class="error">❌ About page image not found</div>';
+                }
+            })
+            .catch(error => {
+                document.getElementById('image-test').innerHTML = '<div class="error">❌ Error loading image: ' + error.message + '</div>';
+            });
+    </script>
+</body>
+</html> 
