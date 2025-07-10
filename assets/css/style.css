@@ -930,7 +930,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #1B5E20 0%, #43e97b 100%);
+    background: linear-gradient(135deg, #1B5E20 0%, #43e97b 100%) !important;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1384,7 +1384,7 @@ h1, h2, h3, h4, h5, h6 {
 .author-avatar {
     width: 50px;
     height: 50px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #1B5E20 0%, #43e97b 100%) !important;
     border-radius: 50%;
     display: flex;
     align-items: center;
