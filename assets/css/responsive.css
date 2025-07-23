@@ -304,23 +304,23 @@
     }
 }
 
-/* Dark Mode Support */
+/* Override Dark Mode - Keep Bright Professional Theme */
 @media (prefers-color-scheme: dark) {
     body {
-        background: #1a1a1a;
-        color: #e0e0e0;
+        background: #FFFFFF !important;
+        color: #333333 !important;
     }
     
     .header {
-        background: rgba(26, 26, 26, 0.95);
+        background: #FFFFFF !important;
     }
     
     .nav-link {
-        color: #e0e0e0;
+        color: #333333 !important;
     }
     
     .section-title {
-        color: #e0e0e0;
+        color: #1A252F !important;
     }
     
     .promise-item,
@@ -328,11 +328,39 @@
     .process-step,
     .path-card,
     .testimonial-card {
-        background: #2a2a2a;
-        color: #e0e0e0;
+        background: #FFFFFF !important;
+        color: #333333 !important;
     }
     
     .footer {
-        background: #2a2a2a;
+        background: #F8F9FA !important;
+        color: #1A252F !important;
+    }
+    
+    /* Ensure all sections maintain bright theme */
+    section {
+        background: #FFFFFF !important;
+        color: #333333 !important;
+    }
+    
+    .hero,
+    .promise,
+    .conditions,
+    .optimization,
+    .how-it-works,
+    .choose-path,
+    .testimonials,
+    .closing-cta,
+    .contact {
+        background: #FFFFFF !important;
+        color: #333333 !important;
+    }
+    
+    .hero.green-hero,
+    .promise,
+    .how-it-works,
+    .footer {
+        background: #F8F9FA !important;
+        color: #1A252F !important;
     }
 } 
