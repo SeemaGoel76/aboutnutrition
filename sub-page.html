@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Root Cause Nutrition Program – Your Journey</title>
+    <meta name="description" content="Root Cause Nutrition Program: how it works, 3-month journey, what's included, philosophy, pricing, and how to start.">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Mukta:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="Copy-of-Title.png">
+         <style>
+         .sub-hero {
+             padding: 120px 0 80px;
+             background: linear-gradient(135deg, #e6f4ea 0%, #f8fffb 100%);
+         }
+         /* New custom tick list */
+.tick-list {
+  list-style: none;          /* remove default bullets */
+  display: inline-block;     /* centers the whole list block */
+  text-align: left;          /* aligns text starting from tick */
+  padding: 0;
+  margin: 20px auto;
+}
+
+
+.tick-list li {
+  position: relative;
+  padding-left: 28px;        /* spacing for tick */
+  margin-bottom: 10px;
+}
+
+.tick-list li::before {
+  content: "✔";              /* tick mark */
+  position: absolute;
+  left: 0;
+  color: green;
+  font-weight: bold;
+}
+/* Custom tick list (keeps orientation same as Month 2) */
+.tick-list-journey {
+  list-style: none;          /* remove default bullets */
+  padding: 0;
+  margin: 15px 0;
+  text-align: left;          /* ensures text is left aligned */
+}
+
+.tick-list-journey li {
+  position: relative;
+  padding-left: 28px;        /* indent so text starts after tick */
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.tick-list-journey li::before {
+  content: "✔";              /* tick instead of bullet */
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #28a745;            /* green tick */
+  font-weight: bold;
+}
+
+
+         .sub-hero .section-title { margin-bottom: 1rem; }
+         .sub-hero .section-description { max-width: 800px; margin: 0 auto; }
+         .icon-bullet { display: flex; gap: 0.75rem; align-items: flex-start; }
+         .icon-bullet i { color: #007BFF; margin-top: 0.2rem; }
+         .card-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.2rem; margin-top: 1rem; }
+         .card { background: #FFFFFF; border: 1px solid #E9ECEF; border-radius: 15px; padding: 1.2rem 1.2rem; }
+         .divider { height: 1px; background: #E9ECEF; margin: 17px 0; }
+         .pricing { text-align: center; padding: 60px 0; }
+         .pricing .price { font-size: 3rem; font-weight: 800; color: #1B5E20; }
+         .pricing .strike { font-size: 2rem; text-decoration: line-through; color: #999; margin-right: 10px; font-weight: 600; }
+         .cta-section { text-align: center; padding: 60px 0; }
+         .fixed-cta { position: fixed; right: 18px; bottom: 18px; z-index: 1200; display: none; }
+         @media (max-width: 768px) { .fixed-cta { display: inline-flex; } }
+         .section-note { font-style: italic; color: #666; text-align: center; margin-top: 1rem; }
+         
+         /* Simple button styles - no hover effects */
+         .btn, .btn-primary, .btn-secondary {
+             display: inline-block;
+             padding: 12px 32px;
+             border-radius: 30px;
+             font-size: 1.1rem;
+             font-weight: 700;
+             text-decoration: none;
+             text-align: center;
+             cursor: pointer;
+             transition: none;
+             border: none;
+         }
+         
+         .btn-primary {
+             background: #007BFF;
+             color: #FFFFFF;
+         }
+         
+                   .btn-secondary {
+              background: #FFFFFF !important;
+              color: #007BFF !important;
+              border: 2px solid #007BFF !important;
+              font-weight: 700 !important;
+          }
+         
+         .btn-whatsapp {
+             background: #25d366;
+             color: #FFFFFF;
+             display: flex;
+             align-items: center;
+             gap: 0.5rem;
+         }
+         
+                   .cta-buttons {
+              display: flex;
+              gap: 1rem;
+              justify-content: center;
+              flex-wrap: wrap;
+          }
+          
+          /* Force button text visibility */
+          .btn-secondary span,
+          .btn-secondary {
+              color: #007BFF !important;
+              background: #FFFFFF !important;
+              opacity: 1 !important;
+              visibility: visible !important;
+          }
+          
+          /* Override any hover effects */
+          .btn-secondary:hover,
+          .btn-secondary:focus,
+          .btn-secondary:active {
+              color: #007BFF !important;
+              background: #FFFFFF !important;
+              opacity: 1 !important;
+              visibility: visible !important;
+          }
+     </style>
+    
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <img src="Copy-of-Title.png" alt="About Nutrition" class="logo">
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="sub-page.html" class="nav-link active">Your Journey</a></li>
+                    <li><a href="index.html#testimonials" class="nav-link">Testimonials</a></li>
+                    <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="sub-hero">
+        <div class="container">
+            <h1 class="section-title">Root Cause Nutrition Program</h1>
+            <p class="section-description">Motivation doesn’t sustain health. Habits do. This high-touch 3-month journey builds your foundation, reverses root causes, and teaches lifelong systems that fit your real life.</p>
+            <div class="cta-buttons" style="margin-top: 1.5rem;">
+                <a href="https://wa.me/919320783252?text=Hi%20Seema!%20I'm%20interested%20in%20the%20Root%20Cause%20Nutrition%20Program." target="_blank" class="btn btn-primary">Book a Consult</a>
+                <a href="https://instagram.com/" target="_blank" class="btn btn-secondary">DM "HEAL" on Instagram</a>
+            </div>
+        </div>
+    </section>
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How the Program Works</h2>
+            <div class="card">
+                <h3>Step 1 – Thorough Body Profiling</h3>
+                <div class="card-list">
+                    <div class="icon-bullet"><i class="fas fa-clipboard-list"></i><span>Comprehensive questionnaire + Ayurvedic prakriti–vikriti analysis</span></div>
+                    <div class="icon-bullet"><i class="fas fa-vial"></i><span>Review of blood reports & medical history</span></div>
+                    <div class="icon-bullet"><i class="fas fa-brain"></i><span>Deep-dive root cause awareness — understand why your body is reacting, not just what to eat</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="timeline">
+        <div class="container">
+            <h2 class="section-title">Your 3-Month Journey</h2>
+            <div class="timeline-grid">
+                <div class="timeline-item">
+                    <div class="timeline-period">Month 1</div>
+                    <div class="timeline-description">
+                        <h3>Foundation & Nutritional <br> Gaps</h3>
+                        <ul class="tick-list-journey">
+                            <li>Correct deficiencies & balance energy</li>
+                            <li>Build sustainable meal patterns</li>
+                            <li>Create metabolic stability</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-period">Month 2</div>
+                    <div class="timeline-description">
+                        <h3>Inflammation Control & Metabolic Reset</h3>
+                        <ul class="tick-list-journey">
+                            <li>Reduce hidden inflammation</li>
+                            <li>Reset sugar + fat metabolism</li>
+                            <li>Gentle food-based detox (no fads, no starvation)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-period">Month 3</div>
+                    <div class="timeline-description">
+                        <h3>Muscle Health & Lifelong Habits</h3>
+                        <ul class="tick-list-journey">
+                            <li>Strengthen muscle for lasting weight/sugar control</li>
+                            <li>Daily habits that stick for life</li>
+                            <li>Maintenance blueprint to prevent rebound</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="what-youll-do">
+        <div class="container">
+            <h2 class="section-title">What You Get</h2>
+            <div class="what-youll-do-grid">
+                <div class="what-youll-do-item">
+                    <div class="what-youll-do-icon"><i class="fas fa-user-md"></i></div>
+                    <h3>1:1 Personal Sessions</h3>
+                    <p>Weekly check-ins (20–30 mins) to track progress with tailored guidance.</p>
+                </div>
+                <div class="what-youll-do-item">
+                    <div class="what-youll-do-icon"><i class="fas fa-people-group"></i></div>
+                    <h3>Community Engagement</h3>
+                    <p>Tip of the Day, Recipe of the Day, Grocery Lists, Menu Ideas, and motivation.</p>
+                </div>
+                <div class="what-youll-do-item">
+                    <div class="what-youll-do-icon"><i class="fas fa-utensils"></i></div>
+                    <h3>Flexible, Real-Life Protocols</h3>
+                    <p>Family-friendly, calorie-balanced plans without giving up favorite foods.</p>
+                </div>
+                <div class="what-youll-do-item">
+                    <div class="what-youll-do-icon"><i class="fas fa-users"></i></div>
+                    <h3>Group Option <br>(Family & Friends)</h3>
+                    <p>1 Monthly Education Session + 1:1 Progress Check every 15 days (30 mins).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="about-cta">
+        <div class="container">
+            <h2 class="section-title">Program Philosophy</h2>
+            <p class="cta-description">“Motivation doesn’t sustain health. Habits do.” Every person is unique, so your healing journey will be personalized — from your labs to your lifestyle.</p>
+        </div>
+    </section>
+
+    <section class="pricing">
+        <div class="container">
+            <h2 class="section-title">Investment</h2>
+            <p class="price"><span class="strike">₹35,000</span> ₹21,000 <span style="font-weight:600; color:#666; font-size:1rem;">(limited time)</span></p>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+          <h2 class="section-title">Ready to Begin?</h2>
+          <p class="section-description">Your first consult is the most important step.</p>
+          <ul class="tick-list">
+            <li>Review of your lab reports</li>
+            <li>Prakriti/Vikriti (body type & imbalance) analysis</li>
+            <li>Medical & family history mapping</li>
+            <li>Root cause diagnosis of your health concerns</li>
+          </ul>
+            <div class="cta-buttons" style="margin-top: 1.5rem;">
+                <a href="https://instagram.com/" target="_blank" class="btn btn-secondary">DM "HEAL" on Instagram</a>
+                <a href="https://wa.me/919320783252?text=Hi%20Seema!%20I'd%20like%20to%20book%20a%20consult." target="_blank" class="btn btn-primary">Book a Consult</a>
+            </div>
+            <p class="section-note">Prefer a calendar link? We can add Calendly on request.</p>
+        </div>
+    </section>
+
+    <a href="https://wa.me/919320783252?text=Hi%20Seema!%20I'd%20like%20to%20book%20a%20consult." class="btn btn-whatsapp fixed-cta" target="_blank" aria-label="Book Your Consult">
+        <i class="fab fa-whatsapp"></i>&nbsp; Book Your Consult
+    </a>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="Copy-of-Title.png" alt="About Nutrition" class="footer-logo">
+                    <p>Transform your health through personalized nutrition. Your wellness journey starts here.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="sub-page.html">Your Journey</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h4>Services</h4>
+                    <ul>
+                        <li>1-on-1 Coaching</li>
+                        <li>Group Wellness Circles</li>
+                        <li>Professional Upskilling</li>
+                        <li>Lab Report Interpretation</li>
+                        <li>Personalized Nutrition Plans</li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-envelope"></i> seemavgoel@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +91 93207 83252</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Mumbai, India</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 About Nutrition. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="aboutnutrition_assets/wp-includes/js/jquery/jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+
+

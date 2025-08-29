@@ -2324,6 +2324,7 @@ section:nth-child(even),
     font-size: 1.1rem;
     line-height: 1.6;
     margin: 0;
+    color: #FFFFFF !important;
 }
 
 /* Services CTA Section */
